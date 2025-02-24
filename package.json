@@ -1,0 +1,9 @@
+{
+  "name": "recipe-search-frontend",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "dev": "echo \"No server needed for static frontend\""
+  },
+  "dependencies": {}
+}
