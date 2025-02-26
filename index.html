@@ -170,6 +170,8 @@
                 loadingElement.innerHTML = '';
                 return;
             }
+            // Hide the image once the search starts
+            document.getElementById('image').style.display = 'none';
 
             try {
                 const response = await fetch(`https://try-recipe.onrender.com/recipe/${encodeURIComponent(recipeName)}`);
@@ -206,10 +208,6 @@
                 errorElement.innerHTML = 'An error occurred. Please try again later.';
                 console.error(error);
             }
-        }
-            // Function to hide the image
-        function searchRecipe() {
-          document.getElementById('image').style.display = 'none';
         }
     </script>
 </body>
